@@ -14,9 +14,6 @@ import Link from "next/link";
 const NavTools = ({ isDesktop }) => {
   return (
     <div className="nav-tools flex items-center  gap-2">
-      <Link href="/add-parcel">
-        <Button className="rounded-[5px]">Add Parcel</Button>
-      </Link>
       {isDesktop && <Language />}
       {isDesktop && (
         <div className="ltr:pl-2">
