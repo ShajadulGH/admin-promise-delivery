@@ -32,10 +32,10 @@ const LogInForm = () => {
         <Image src="/Asset 1RP Logo.png" width="150" height="150" />
       </Link>
       <div className="2xl:mt-8 mt-6 2xl:text-3xl text-2xl font-bold text-default-900">
-        Welcome, Merchant!
+        Welcome, Admin!
       </div>
       <div className="2xl:text-lg text-base text-default-600 2xl:mt-2 leading-6">
-        Sign in to have a reliable and fast product delivery
+        Sign in to operate!
       </div>
       <form onSubmit={formSubmitHandler} className="mt-5 2xl:mt-7">
         <div>
@@ -111,13 +111,6 @@ const LogInForm = () => {
         </Button>
       </form>
       <div className="mt-6 xl:mt-8 flex flex-wrap justify-center gap-4"></div>
-      <div className="mt-5 2xl:mt-8 text-center text-base text-default-600">
-        Become a Merchant.{" "}
-        <Link href="/auth/register" className="text-primary">
-          {" "}
-          Sign Up{" "}
-        </Link>
-      </div>
     </div>
   );
 };
