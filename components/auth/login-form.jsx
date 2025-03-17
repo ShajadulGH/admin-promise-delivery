@@ -3,7 +3,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -32,7 +31,7 @@ const LogInForm = () => {
         <Image src="/Asset 1RP Logo.png" width="150" height="150" />
       </Link>
       <div className="2xl:mt-8 mt-6 2xl:text-3xl text-2xl font-bold text-default-900">
-        Welcome, Admin!
+        Welcome!
       </div>
       <div className="2xl:text-lg text-base text-default-600 2xl:mt-2 leading-6">
         Sign in to Operate!
