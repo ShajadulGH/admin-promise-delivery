@@ -16,7 +16,6 @@ const LoginPage = () => {
             className="absolute top-0 left-0 w-full h-full"
           />
         )}
-
         <div className="col-span-2 lg:col-span-1 flex justify-center">
           <div className=" w-full bg-background py-5 max-w-xl  rounded-sm relative z-10 2xl:p-16 xl:p-12 p-10 m-4 shadow-lg ">
             <LogInForm />

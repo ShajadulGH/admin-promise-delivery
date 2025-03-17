@@ -35,7 +35,7 @@ const LogInForm = () => {
         Welcome, Admin!
       </div>
       <div className="2xl:text-lg text-base text-default-600 2xl:mt-2 leading-6">
-        Sign in to operate!
+        Sign in to Operate!
       </div>
       <form onSubmit={formSubmitHandler} className="mt-5 2xl:mt-7">
         <div>
