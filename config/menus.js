@@ -1,67 +1,19 @@
 import {
   DashBoard,
+  Settings,
+  Location,
+  Internal,
+  External,
+  Hub,
+  Fulhub,
   Delivery,
   Invoice,
-  Store,
   Issue,
-  Taka,
-  Coverage,
-  Operator,
-  Promo,
-  Api,
   Notice,
-  Support,
 } from "@/components/svg";
 
 export const menusConfig = {
-  mainNav: [
-    {
-      title: "dashboard",
-      icon: DashBoard,
-      href: "/dashboard",
-    },
-
-    // {
-    //   title: "Menu",
-    //   icon: DashBoard,
-    //   child: [
-    //     {
-    //       title: "dashboard",
-    //       icon: DashBoard,
-    //       href: "/dashboard",
-    //     },
-    //     {
-    //       title: "deliveries",
-    //       icon: Envelope,
-    //       href: "/deliveries",
-    //     },
-    //     {
-    //       title: "invoice",
-    //       icon: Messages,
-    //       href: "/chat",
-    //     },
-    //     {
-    //       title: "store",
-    //       icon: Envelope,
-    //       href: "/email",
-    //     },
-    //   ],
-    // },
-  ],
   sidebarNav: {
-    modern: [
-      {
-        title: "Menu",
-        icon: DashBoard,
-        child: [
-          {
-            title: "dashboard",
-            icon: DashBoard,
-            href: "/dashboard",
-          },
-        ],
-      },
-    ],
     classic: [
       {
         isHeader: true,
@@ -71,6 +23,106 @@ export const menusConfig = {
         title: "dashboard",
         icon: DashBoard,
         href: "/dashboard",
+      },
+      {
+        title: "Internal User",
+        icon: Internal,
+        href: "#",
+        isOpen: false,
+        isHide: false,
+        child: [
+          {
+            title: "Users",
+            href: "/dashboard",
+          },
+          {
+            title: "Users List",
+            href: "#",
+          },
+        ],
+      },
+
+      {
+        title: "External User",
+        icon: External,
+        href: "#",
+        isOpen: false,
+        isHide: false,
+        child: [
+          {
+            title: "Merchants",
+            href: "/dashboard",
+          },
+          {
+            title: "Stores",
+            href: "#",
+          },
+          {
+            title: "Customers",
+            href: "#",
+          },
+        ],
+      },
+      {
+        title: "Hub",
+        icon: Hub,
+        href: "#",
+      },
+      {
+        title: "Fulfilment Hub",
+        icon: Fulhub,
+        href: "#",
+      },
+      {
+        title: "Parcel",
+        icon: Delivery,
+        href: "#",
+      },
+      {
+        title: "Reports",
+        icon: Issue,
+        href: "#",
+      },
+      {
+        title: "Notice",
+        icon: Notice,
+        href: "#",
+      },
+      {
+        title: "Invoice",
+        icon: Invoice,
+        href: "#",
+      },
+      {
+        title: "Location",
+        icon: Location,
+        href: "#",
+      },
+
+      {
+        title: "Settings",
+        icon: Settings,
+        href: "/dashboard",
+        isOpen: false,
+        isHide: false,
+        child: [
+          {
+            title: "Weight Charge",
+            href: "/dashboard",
+          },
+          {
+            title: "Delivery Charge",
+            href: "#",
+          },
+          {
+            title: "Servise Type",
+            href: "#",
+          },
+          {
+            title: "Item Type",
+            href: "#",
+          },
+        ],
       },
     ],
   },
