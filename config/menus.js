@@ -51,15 +51,19 @@ export const menusConfig = {
         child: [
           {
             title: "Merchants",
-            href: "/dashboard",
+            href: "/merchants",
           },
           {
             title: "Stores",
-            href: "#",
+            href: "/store",
+          },
+          {
+            title: "New Stores",
+            href: "/new-store",
           },
           {
             title: "Customers",
-            href: "#",
+            href: "/customers",
           },
         ],
       },
