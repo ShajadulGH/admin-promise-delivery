@@ -12,11 +12,11 @@ const MultiNestedMenu = ({ subItem, subIndex, activeMultiMenu, trans }) => {
       <CollapsibleContent className="CollapsibleContent">
         <ul className="space-y-3 pl-1">
           {subItem?.multi_menu?.map((item, i) => (
-            <li className=" first:pt-3" key={i}>
+            <li className="first:pt-3" key={i}>
               <Link href={item.href}>
                 <span
                   className={cn(
-                    "text-sm flex gap-3  items-center transition-all duration-150 capitalize hover:text-primary",
+                    "text-sm flex gap-3 items-center transition-all duration-150 capitalize hover:text-primary",
                     {
                       " text-primary  ": isLocationMatch(
                         item.href,

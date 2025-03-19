@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Collapsible, CollapsibleContent } from "@/components/ui/collapsible";
 import MultiMenuHandler from "./multi-menu-handler";
 import MultiNestedMenu from "./multi-nested-menu";
@@ -13,7 +13,6 @@ const NestedSubMenu = ({
   index,
   activeMultiMenu,
   toggleMultiMenu,
-  title,
   trans,
 }) => {
   const pathname = usePathname();
@@ -25,7 +24,7 @@ const NestedSubMenu = ({
           {item.child?.map((subItem, j) => (
             <li
               className={cn(
-                "block pl-9   first:pt-4 last:pb-4  relative before:absolute first:before:top-4 before:top-0 before:left-4  before:w-[3px]",
+                "block pl-9 first:pt-4 last:pb-4 relative before:absolute first:before:top-4 before:top-0 before:left-4  before:w-[3px]",
                 {
                   "before:bg-primary first:before:h-[calc(100%-16px)]  before:h-full":
                     isLocationMatch(subItem.href, locationName),

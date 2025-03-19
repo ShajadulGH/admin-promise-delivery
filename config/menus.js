@@ -28,16 +28,16 @@ export const menusConfig = {
         title: "Internal User",
         icon: Internal,
         href: "#",
-        isOpen: false,
-        isHide: false,
+        // isOpen: false,
+        // isHide: false,
         child: [
           {
             title: "Users",
-            href: "/dashboard",
+            href: "/users",
           },
           {
-            title: "Users List",
-            href: "#",
+            title: "Add User",
+            href: "/add-user",
           },
         ],
       },
@@ -46,8 +46,8 @@ export const menusConfig = {
         title: "External User",
         icon: External,
         href: "#",
-        isOpen: false,
-        isHide: false,
+        // isOpen: false,
+        // isHide: false,
         child: [
           {
             title: "Merchants",
@@ -103,8 +103,8 @@ export const menusConfig = {
         title: "Settings",
         icon: Settings,
         href: "/dashboard",
-        isOpen: false,
-        isHide: false,
+        // isOpen: false,
+        // isHide: false,
         child: [
           {
             title: "Weight Charge",

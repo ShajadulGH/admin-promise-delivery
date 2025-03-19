@@ -1,0 +1,42 @@
+export const users = [
+  {
+    id: 1,
+    name: "Rahim Uddin",
+    number: "01861171441",
+    email: "rahimuddin@courierbd.com",
+    role: "admin",
+    avatar: "/images/avatar/avatar-9.jpg",
+  },
+  {
+    id: 2,
+    name: "Shamima Akter",
+    number: "01861171441",
+    email: "shamimaakter@courierbd.com",
+    role: "admin",
+    avatar: "/images/avatar/avatar-10.jpg",
+  },
+  {
+    id: 3,
+    name: "Jahid Hasan",
+    number: "01861171441",
+    email: "jahidhasan@courierbd.com",
+    role: "admin",
+    avatar: "/images/avatar/avatar-1.jpg",
+  },
+  {
+    id: 4,
+    name: "Tania Rahman",
+    number: "01861171441",
+    email: "taniarahman@courierbd.com",
+    role: "admin",
+    avatar: "/images/avatar/avatar-12.jpg",
+  },
+  {
+    id: 5,
+    name: "Mahmudul Islam",
+    number: "01861171441",
+    email: "mahmudulislam@courierbd.com",
+    role: "admin",
+    avatar: "/images/avatar/avatar-13.jpg",
+  },
+];

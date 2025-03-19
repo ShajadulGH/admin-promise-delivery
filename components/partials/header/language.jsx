@@ -14,7 +14,6 @@ import { useState } from "react";
 import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useRouter, usePathname } from "next/navigation";
-import { useThemeStore } from "@/store";
 const languages = [
   {
     name: "en",
