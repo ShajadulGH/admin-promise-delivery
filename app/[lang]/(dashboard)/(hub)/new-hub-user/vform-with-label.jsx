@@ -26,34 +26,46 @@ const VFormWithLabel = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-2">
           <Label htmlFor="hubName">Hub User Name</Label>
-          <Input type="text" placeholder="Enter Hub Name" id="hubName" />
+          <Input type="text" placeholder="Enter Hub User Name" id="hubName" />
         </div>
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-2">
           <Label htmlFor="hubAddress">Hub User Address</Label>
-          <Input type="text" placeholder="Enter Hub Address" id="hubAddress" />
+          <Input
+            type="text"
+            placeholder="Enter Hub User Address"
+            id="hubAddress"
+          />
         </div>
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-2">
           <Label htmlFor="contactNumber">Hub User Number</Label>
           <Input
             type="text"
-            placeholder="Enter Contact Number"
+            placeholder="Enter Hub User Number"
             id="contactNumber"
           />
         </div>
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-2">
           <Label htmlFor="hubEmail">Hub User Email</Label>
-          <Input type="email" placeholder="Enter Hub Email" id="hubEmail" />
+          <Input
+            type="email"
+            placeholder="Enter Hub User Email"
+            id="hubEmail"
+          />
         </div>
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-2">
           <Label htmlFor="hubEmail">Password</Label>
-          <Input type="email" placeholder="Enter Hub Email" id="hubEmail" />
+          <Input
+            type="email"
+            placeholder="Enter Hub User Password"
+            id="hubEmail"
+          />
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-2">
           <Label htmlFor="hubType">Select Hub</Label>
           <Select>
             <SelectTrigger>
-              <SelectValue placeholder="Select Hub Type" />
+              <SelectValue placeholder="Select Hub" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="main">Main Hub</SelectItem>
