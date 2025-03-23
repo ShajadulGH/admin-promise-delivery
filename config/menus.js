@@ -84,7 +84,7 @@ export const menusConfig = {
           },
           {
             title: "Riders",
-            href: "#",
+            href: "/riders",
           },
         ],
       },
