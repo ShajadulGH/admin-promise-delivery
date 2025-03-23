@@ -79,7 +79,7 @@ export const menusConfig = {
             href: "/hub-list",
           },
           {
-            title: "HUb Users",
+            title: "Hub Users",
             href: "#",
           },
           {
