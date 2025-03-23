@@ -80,7 +80,7 @@ export const menusConfig = {
           },
           {
             title: "Hub Users",
-            href: "#",
+            href: "/hub-users",
           },
           {
             title: "Riders",

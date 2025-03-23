@@ -27,10 +27,59 @@ import {
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { data } from "./data";
 import { Icon } from "@iconify/react";
 import { cn } from "@/lib/utils";
 
+// Dummy Data
+const data = [
+  {
+    SL: 1,
+    Name: "Abdul Rahman",
+    Email: "abdul.rahman@gmail.com",
+    Branch: "Main Branch",
+    District: "Dhaka",
+    Area: "Mirpur",
+    Status: "Active",
+  },
+  {
+    SL: 2,
+    Name: "Fatima Begum",
+    Email: "fatima.begum@yahoo.com",
+    Branch: "Sub Branch",
+    District: "Chittagong",
+    Area: "Agrabad",
+    Status: "Inactive",
+  },
+  {
+    SL: 3,
+    Name: "Mohammad Ali",
+    Email: "mohammad.ali@hotmail.com",
+    Branch: "Regional Branch",
+    District: "Sylhet",
+    Area: "Zindabazar",
+    Status: "Active",
+  },
+  {
+    SL: 4,
+    Name: "Ayesha Akhtar",
+    Email: "ayesha.akhtar@gmail.com",
+    Branch: "Main Branch",
+    District: "Dhaka",
+    Area: "Gulshan",
+    Status: "Active",
+  },
+  {
+    SL: 5,
+    Name: "Kamal Hossain",
+    Email: "kamal.hossain@yahoo.com",
+    Branch: "Sub Branch",
+    District: "Khulna",
+    Area: "Sonadanga",
+    Status: "Inactive",
+  },
+];
+
+// Columns Definition
 const columns = [
   {
     accessorKey: "SL",
@@ -68,20 +117,11 @@ const columns = [
     ),
   },
   {
-    accessorKey: "Address",
-    header: "Address",
-    cell: ({ row }) => (
-      <div className="whitespace-nowrap min-w-[150px]">
-        {row.getValue("Address")}
-      </div>
-    ),
-  },
-  {
-    accessorKey: "Type",
-    header: "Type",
+    accessorKey: "Branch",
+    header: "Branch",
     cell: ({ row }) => (
       <div className="whitespace-nowrap min-w-[100px]">
-        {row.getValue("Type")}
+        {row.getValue("Branch")}
       </div>
     ),
   },
@@ -118,39 +158,6 @@ const columns = [
         </Badge>
       </div>
     ),
-  },
-  {
-    accessorKey: "actions",
-    cell: () => {
-      return (
-        <div className="flex gap-3 items-center">
-          <Button
-            size="icon"
-            variant="outline"
-            color="secondary"
-            className="h-7 w-7"
-          >
-            <Icon icon="mdi:pencil" className="h-4 w-4 text-red-500" />
-          </Button>
-          <Button
-            size="icon"
-            variant="outline"
-            className="h-7 w-7"
-            color="secondary"
-          >
-            <Icon icon="mdi:eye" className="h-4 w-4 text-red-500" />
-          </Button>
-          <Button
-            size="icon"
-            variant="outline"
-            className="h-7 w-7"
-            color="secondary"
-          >
-            <Icon icon="mdi:trash" className="h-4 w-4 text-red-500" />
-          </Button>
-        </div>
-      );
-    },
   },
 ];
 
