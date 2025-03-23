@@ -71,7 +71,24 @@ export const menusConfig = {
         title: "Hub",
         icon: Hub,
         href: "#",
+        // isOpen: false,
+        // isHide: false,
+        child: [
+          {
+            title: "Hub List",
+            href: "/hub-list",
+          },
+          {
+            title: "HUb Users",
+            href: "#",
+          },
+          {
+            title: "Riders",
+            href: "#",
+          },
+        ],
       },
+
       {
         title: "Fulfilment Hub",
         icon: Fulhub,
