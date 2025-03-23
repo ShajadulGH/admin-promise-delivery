@@ -185,6 +185,39 @@ const columns = [
       </div>
     ),
   },
+  {
+    accessorKey: "actions",
+    cell: () => {
+      return (
+        <div className="flex gap-3 items-center">
+          <Button
+            size="icon"
+            variant="outline"
+            color="secondary"
+            className="h-7 w-7"
+          >
+            <Icon icon="mdi:pencil" className="h-4 w-4 text-red-500" />
+          </Button>
+          <Button
+            size="icon"
+            variant="outline"
+            className="h-7 w-7"
+            color="secondary"
+          >
+            <Icon icon="mdi:eye" className="h-4 w-4 text-red-500" />
+          </Button>
+          <Button
+            size="icon"
+            variant="outline"
+            className="h-7 w-7"
+            color="secondary"
+          >
+            <Icon icon="mdi:trash" className="h-4 w-4 text-red-500" />
+          </Button>
+        </div>
+      );
+    },
+  },
 ];
 
 export function BasicDataTable() {

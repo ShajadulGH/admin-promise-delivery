@@ -7,8 +7,8 @@ const FormLayout = () => {
   return (
     <>
       <Breadcrumbs>
-        <BreadcrumbItem>Hub List</BreadcrumbItem>
-        <BreadcrumbItem>Add Hub</BreadcrumbItem>
+        <BreadcrumbItem>Hub Users</BreadcrumbItem>
+        <BreadcrumbItem>Add User</BreadcrumbItem>
       </Breadcrumbs>
 
       <div className="space-y-5 mt-5">

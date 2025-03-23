@@ -54,7 +54,7 @@ const VFormWithLabel = () => {
         </div>
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-2">
           <Label htmlFor="hubEmail">Password</Label>
-          <Input
+          <Input 
             type="email"
             placeholder="Enter Hub User Password"
             id="hubEmail"
