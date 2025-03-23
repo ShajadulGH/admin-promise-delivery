@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Hub List",
+  title: "Add Hub",
 };
 
 const Layout = ({ children }) => {
