@@ -5,9 +5,7 @@ import { ChevronDown } from "lucide-react";
 import {
   flexRender,
   getCoreRowModel,
-  getFilteredRowModel,
   getPaginationRowModel,
-  getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
 
@@ -65,13 +63,13 @@ const columns = [
     accessorKey: "Name",
     header: "Name",
     cell: ({ row }) => (
-      <div className="  font-medium  text-card-foreground/80 min-w-[100px]">
-        <div className="flex space-x-3  rtl:space-x-reverse items-center">
-          <Avatar className=" rounded-full">
+      <div className="font-medium text-card-foreground/80 min-w-[100px]">
+        <div className="flex space-x-3 rtl:space-x-reverse items-center">
+          <Avatar className="rounded-full">
             <AvatarImage src={row?.original?.avatar} />
             <AvatarFallback>AB</AvatarFallback>
           </Avatar>
-          <span className=" text-sm   text-card-foreground whitespace-nowrap">
+          <span className="text-sm text-card-foreground whitespace-nowrap">
             {row?.original?.Name}
           </span>
         </div>
@@ -132,7 +130,6 @@ const columns = [
       </div>
     ),
   },
-
   {
     accessorKey: "Status",
     header: "Status",
@@ -143,13 +140,12 @@ const columns = [
           (row.getValue("Status") === "inactive" && "destructive") ||
           (row.getValue("Status") === "active" && "success")
         }
-        className=" capitalize"
+        className="capitalize"
       >
         {row.getValue("Status")}
       </Badge>
     ),
   },
-
   {
     accessorKey: "actions",
     cell: () => {
@@ -186,25 +182,30 @@ const columns = [
 ];
 
 export function BasicDataTable() {
-  const [sorting, setSorting] = React.useState([]);
-  const [columnFilters, setColumnFilters] = React.useState([]);
+  const [globalFilter, setGlobalFilter] = React.useState("");
   const [columnVisibility, setColumnVisibility] = React.useState({});
   const [rowSelection, setRowSelection] = React.useState({});
 
+  // Filter data based on global filter
+  const filteredData = React.useMemo(() => {
+    if (!globalFilter) return data;
+
+    return data.filter((row) =>
+      Object.values(row).some((value) =>
+        String(value).toLowerCase().includes(globalFilter.toLowerCase())
+      )
+    );
+  }, [globalFilter]);
+
   const table = useReactTable({
-    data,
+    data: filteredData,
     columns,
-    onSortingChange: setSorting,
-    onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
     onColumnVisibilityChange: setColumnVisibility,
     onRowSelectionChange: setRowSelection,
     state: {
-      sorting,
-      columnFilters,
+      globalFilter,
       columnVisibility,
       rowSelection,
     },
@@ -212,13 +213,11 @@ export function BasicDataTable() {
 
   return (
     <>
-      <div className="flex items-center flex-wrap gap-2  px-4">
+      <div className="flex items-center flex-wrap gap-2 px-4">
         <Input
-          placeholder="Filter emails..."
-          value={table.getColumn("email")?.getFilterValue() || ""}
-          onChange={(event) =>
-            table.getColumn("email")?.setFilterValue(event.target.value)
-          }
+          placeholder="Search Anything..."
+          value={globalFilter}
+          onChange={(event) => setGlobalFilter(event.target.value)}
           className="max-w-sm min-w-[200px] h-10"
         />
         <DropdownMenu>
@@ -305,7 +304,7 @@ export function BasicDataTable() {
           {table.getFilteredRowModel().rows.length} row(s) selected.
         </div>
 
-        <div className="flex gap-2  items-center">
+        <div className="flex gap-2 items-center">
           <Button
             variant="outline"
             size="icon"

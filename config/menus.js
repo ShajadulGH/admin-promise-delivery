@@ -106,13 +106,13 @@ export const menusConfig = {
       {
         title: "Settings",
         icon: Settings,
-        href: "/dashboard",
+        href: "#",
         // isOpen: false,
         // isHide: false,
         child: [
           {
             title: "Weight Charge",
-            href: "/dashboard",
+            href: "#",
           },
           {
             title: "Delivery Charge",
