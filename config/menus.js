@@ -107,7 +107,7 @@ export const menusConfig = {
       {
         title: "Notice",
         icon: Notice,
-        href: "#",
+        href: "/notice",
       },
       {
         title: "Invoice",
