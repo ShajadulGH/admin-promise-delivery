@@ -25,6 +25,11 @@ export const menusConfig = {
         href: "/dashboard",
       },
       {
+        title: "Parcel",
+        icon: Delivery,
+        href: "/parcel",
+      },
+      {
         title: "Internal User",
         icon: Internal,
         href: "#",
@@ -93,12 +98,24 @@ export const menusConfig = {
         title: "Fulfilment Hub",
         icon: Fulhub,
         href: "#",
+        // isOpen: false,
+        // isHide: false,
+        child: [
+          {
+            title: "Fulfilment Hub List",
+            href: "/fulfilment-hub-list",
+          },
+          {
+            title: "Fulfilment Hub Users",
+            href: "/fulfilment-hub-users",
+          },
+          {
+            title: "Fulfilment Hub Riders",
+            href: "/fulfilment-hub-riders",
+          },
+        ],
       },
-      {
-        title: "Parcel",
-        icon: Delivery,
-        href: "/parcel",
-      },
+
       {
         title: "Reports",
         icon: Issue,
