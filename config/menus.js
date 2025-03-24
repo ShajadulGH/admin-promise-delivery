@@ -97,7 +97,7 @@ export const menusConfig = {
       {
         title: "Parcel",
         icon: Delivery,
-        href: "#",
+        href: "/parcel",
       },
       {
         title: "Reports",
