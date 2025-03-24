@@ -1,17 +1,27 @@
-export const users = [
+export const data = [
   {
-    id: 1,
-    division: "Dhaka",
-    country: "Bangladesh",
+    SL: 1,
+    Division: "Rajshahi",
+    Country: "Bangladesh",
   },
   {
-    id: 2,
-    division: "Chittagong",
-    country: "Bangladesh",
+    SL: 2,
+    Division: "Borishal",
+    Country: "Bangladesh",
   },
   {
-    id: 3,
-    division: "Cumilla",
-    country: "Bangladesh",
+    SL: 3,
+    Division: "Dhaka",
+    Country: "Bangladesh",
+  },
+  {
+    SL: 4,
+    Division: "Chittagong",
+    Country: "Bangladesh",
+  },
+  {
+    SL: 5,
+    Division: "Cumilla",
+    Country: "Bangladesh",
   },
 ];

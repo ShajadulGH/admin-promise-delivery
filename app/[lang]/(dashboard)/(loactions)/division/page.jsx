@@ -1,36 +1,29 @@
 "use client";
-import SimpleTable from "./simple-table";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import BasicDataTable from "./page-view";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { BreadcrumbItem, Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { Card } from "@/components/ui/card";
 
-const TailwindUiTable = () => {
+const DataTablePage = () => {
   return (
-    <>
-      <Breadcrumbs>
-        <BreadcrumbItem>Division</BreadcrumbItem>
-        <BreadcrumbItem>Division List</BreadcrumbItem>
-      </Breadcrumbs>
-      <div className="space-y-6 mt-5">
-        <Card className="p-5">
-          <div className="flex flex-wrap items-center gap-4 mb-1">
-            <div className="flex-1">
-              <h3 className="text-xl font-medium text-default-700 mb-2">
-                Division List
-              </h3>
-            </div>
-            <div className="flex-none">
-              <Link href="/new-division">
-                <Button type="button">Add Division</Button>
+    <div className=" space-y-5">
+      <Card className="p-5">
+        <CardHeader>
+          <CardTitle className="grid grid-cols-2">
+            <div className="col-span-1">Divisions</div>
+            <div className="col-span-1 flex justify-end">
+              <Link href="new-division">
+                <Button>Add Division</Button>
               </Link>
             </div>
-          </div>
-          <SimpleTable />
-        </Card>
-      </div>
-    </>
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <BasicDataTable />
+        </CardContent>
+      </Card>
+    </div>
   );
 };
 
-export default TailwindUiTable;
+export default DataTablePage;
