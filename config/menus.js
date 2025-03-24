@@ -131,10 +131,35 @@ export const menusConfig = {
         icon: Invoice,
         href: "/invoice-list",
       },
+
       {
         title: "Location",
         icon: Location,
         href: "#",
+        // isOpen: false,
+        // isHide: false,
+        child: [
+          {
+            title: "Country",
+            href: "/country",
+          },
+          {
+            title: "Division",
+            href: "/division",
+          },
+          {
+            title: "District",
+            href: "/district",
+          },
+          {
+            title: "Zone",
+            href: "/zone",
+          },
+          {
+            title: "Area",
+            href: "/area",
+          },
+        ],
       },
 
       {
