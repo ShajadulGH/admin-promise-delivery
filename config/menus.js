@@ -141,7 +141,7 @@ export const menusConfig = {
           },
           {
             title: "Item Type",
-            href: "#",
+            href: "/item-type",
           },
         ],
       },
