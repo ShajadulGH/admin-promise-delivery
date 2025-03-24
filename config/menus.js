@@ -112,7 +112,7 @@ export const menusConfig = {
       {
         title: "Invoice",
         icon: Invoice,
-        href: "#",
+        href: "/invoice-list",
       },
       {
         title: "Location",
