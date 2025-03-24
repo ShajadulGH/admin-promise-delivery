@@ -46,7 +46,7 @@ const VFormWithLabel = () => {
         </div>
 
         <div className="col-span-2">
-          <Button type="button">Add Service Type</Button>
+          <Button type="button">Add Item Type</Button>
         </div>
       </div>
     </form>
