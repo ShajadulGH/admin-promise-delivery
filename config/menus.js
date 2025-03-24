@@ -137,7 +137,7 @@ export const menusConfig = {
           },
           {
             title: "Servise Type",
-            href: "#",
+            href: "/service-type",
           },
           {
             title: "Item Type",
