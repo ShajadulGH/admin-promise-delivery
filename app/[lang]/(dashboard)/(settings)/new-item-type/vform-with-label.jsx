@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { UploadCloud } from "lucide-react";
 import { useState } from "react";
 const VFormWithLabel = () => {
   const [fileNames, setFileNames] = useState([]);
@@ -38,9 +37,9 @@ const VFormWithLabel = () => {
               <SelectValue placeholder="Select Service Area" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="main">Main Hub</SelectItem>
-              <SelectItem value="sub">Sub Hub</SelectItem>
-              <SelectItem value="regional">Regional Hub</SelectItem>
+              <SelectItem value="main">Dhaka</SelectItem>
+              <SelectItem value="sub">Rajshahi</SelectItem>
+              <SelectItem value="regional">Bogura</SelectItem>
             </SelectContent>
           </Select>
         </div>
