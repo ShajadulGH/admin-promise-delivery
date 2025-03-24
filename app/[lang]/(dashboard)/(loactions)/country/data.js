@@ -1,14 +1,14 @@
-export const users = [
+export const data = [
   {
-    id: 1,
+    SL: 1,
     Country: "Bangladesh",
   },
   {
-    id: 2,
+    SL: 2,
     Country: "India",
   },
   {
-    id: 3,
+    SL: 3,
     Country: "Nepal",
   },
 ];
