@@ -119,7 +119,7 @@ export const menusConfig = {
       {
         title: "Reports",
         icon: Issue,
-        href: "#",
+        href: "/reports",
       },
       {
         title: "Notice",
