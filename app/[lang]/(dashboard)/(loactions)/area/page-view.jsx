@@ -39,28 +39,12 @@ const columns = [
   },
   {
     accessorKey: "Area",
-    header: "Areas",
-    cell: ({ row }) => {
-      const areas = row.getValue("Area");
-      return (
-        <div className="min-w-[200px]">
-          {Array.isArray(areas) ? (
-            <div className="flex flex-wrap gap-1">
-              {areas.map((area, index) => (
-                <span 
-                  key={index}
-                  className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800"
-                >
-                  {area}
-                </span>
-              ))}
-            </div>
-          ) : (
-            <span className="text-muted-foreground">No areas</span>
-          )}
-        </div>
-      );
-    },
+    header: "Area",
+    cell: ({ row }) => (
+      <div className="whitespace-nowrap min-w-[150px]">
+        {row.getValue("Area")}
+      </div>
+    ),
   },
   {
     accessorKey: "Zone",
@@ -137,11 +121,6 @@ export function BasicDataTable() {
 
     return data.filter((row) =>
       Object.values(row).some((value) => {
-        if (Array.isArray(value)) {
-          return value.some(item => 
-            String(item).toLowerCase().includes(globalFilter.toLowerCase())
-          );
-        }
         return String(value).toLowerCase().includes(globalFilter.toLowerCase());
       })
     );
