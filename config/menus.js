@@ -174,11 +174,7 @@ export const menusConfig = {
             href: "#",
           },
           {
-            title: "Delivery Charge",
-            href: "#",
-          },
-          {
-            title: "Servise Type",
+            title: "Service Type",
             href: "/service-type",
           },
           {
