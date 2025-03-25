@@ -12,7 +12,7 @@ const DataTablePage = () => {
           <CardTitle className="grid grid-cols-2">
             <div className="col-span-1">Hub User List</div>
             <div className="col-span-1 flex justify-end">
-              <Link href="new-hub-user">
+              <Link href="new-fulfilment-hub-user">
                 <Button>Add Hub User</Button>
               </Link>
             </div>

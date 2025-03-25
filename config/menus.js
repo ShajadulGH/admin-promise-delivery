@@ -105,10 +105,6 @@ export const menusConfig = {
             title: "Fulfilment Hub Users",
             href: "/fulfilment-hub-users",
           },
-          {
-            title: "Fulfilment Hub Riders",
-            href: "/fulfilment-hub-riders",
-          },
         ],
       },
 
