@@ -40,10 +40,6 @@ export const menusConfig = {
             title: "Users",
             href: "/users",
           },
-          {
-            title: "Add User",
-            href: "/add-user",
-          },
         ],
       },
 
